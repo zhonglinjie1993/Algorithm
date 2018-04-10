@@ -13,13 +13,13 @@ import java.util.Arrays;
 public class SelectionSort {
     public static void main(String[] args) {
         int[] arr = {1, 2, 5, 6, 8, 22, 25, 82, 20, 63, 95, 88, 55};
-        SelectionSort (arr);
-        System.out.println (Arrays.toString (arr));
+        selectionSort(arr);
+        System.out.println(Arrays.toString(arr));
 
 
     }
 
-    private static void SelectionSort(int[] arr) {
+    private static void selectionSort(int[] arr) {
         // 总共要经过 N-1 轮比较
         for (int i = 0; i < arr.length - 1; i++) {
             // 假定第一个元素是最小的数
